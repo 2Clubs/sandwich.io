@@ -8,9 +8,19 @@
 </head>
 <nav>
     <h1 class='nav-title'><em>SANDWICH.IO</em></h1>
-    <
+    <ul>
+        {% comment %} {% if user.is_authenticated %}
+            <li><a href="{% url 'sandwichs_index' %}">View My Sandwiches</li>
+            <li><a href="{% url 'sandwichs_create' %}">Make a Sandwich</li>
+            <li><a href="{% url 'ingredients_index' %}">View The Ingredients</li>
+            <li><a href="{% url 'ingredients_index' %}">Add an Ingredient</li>
+        {% else %}
+            <li><a href="{% url 'signup' %}">Sign Up</a></li>
+            <li><a href="{% url 'login' %}">Log In</a></li>
+        {% endif %} {% endcomment %}
+    </ul>
 </nav>
 <body>
-    
+    {% block content %} {% endblock %}
 </body>
 </html>
