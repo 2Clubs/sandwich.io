@@ -4,22 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandwich.IO</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <title>Sandwich.IO | {% block title %}{% endblock %} </title>
 </head>
-<nav>
-    <h1 class='nav-title'><em>SANDWICH.IO</em></h1>
-    <ul>
-        {% comment %} {% if user.is_authenticated %}
-            <li><a href="{% url 'sandwichs_index' %}">View My Sandwiches</li>
-            <li><a href="{% url 'sandwichs_create' %}">Make a Sandwich</li>
-            <li><a href="{% url 'ingredients_index' %}">View The Ingredients</li>
-            <li><a href="{% url 'ingredients_index' %}">Add an Ingredient</li>
-        {% else %}
-            <li><a href="{% url 'signup' %}">Sign Up</a></li>
-            <li><a href="{% url 'login' %}">Log In</a></li>
-        {% endif %} {% endcomment %}
-    </ul>
-</nav>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><em>Sandwich.IO</em></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Sandwiches
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">My Sandwiches</a></li>
+              <li><a class="dropdown-item" href="#">Add a Sandwich</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Ingredients
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ingredients List</a></li>
+              <li><a class="dropdown-item" href="#">Add an Ingredient</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 <body>
     {% block content %} {% endblock %}
 </body>
