@@ -1,7 +1,6 @@
 from django.db import models
 from django.urls import reverse
 from django.contrib.auth.models import User
-# Create your models here.
 
 TEMP = (
     ('Hot', 'Hot'),
@@ -34,7 +33,7 @@ class Sandwich(models.Model):
         return f'{self.name}'
     
     def get_absolute_url(self):
-        return reverse("detail", kwargs={"pk": self.pk})
+        return reverse("detail", kwargs={"sandwich_id": self.id})
     
 
 

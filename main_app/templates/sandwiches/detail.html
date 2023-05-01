@@ -1,3 +1,4 @@
+{% extends 'base.html' %} {% block content %}
 <h1>{{ sandwich.name }}</h1>
 <hr />
 
@@ -27,7 +28,6 @@
       <h5>No Ingredients</h5>
       {% endif %}
     </div>
-    <!-- Available toys will come after this line -->
     <div class="col s6">
       <h3>Available Ingredients</h3>
       {% if ingredients.count %}
@@ -51,5 +51,4 @@
       {% endif %}
     </div>
   </div>
-
-
+  {% endblock %}

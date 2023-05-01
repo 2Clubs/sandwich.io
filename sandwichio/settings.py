@@ -82,7 +82,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': '2Clubs/sandwich-io',
-        'USER': 'Mrod2871',
+        'USER': str(os.getenv('USER')),
         'PASSWORD': str(os.getenv('PASSWORD')),
         'HOST': 'db.bit.io',
         'PORT': '5432',

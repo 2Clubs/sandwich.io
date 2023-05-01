@@ -20,6 +20,22 @@ def sandwich_index(request):
   return render(request, 'sandwiches/index.html', {'sandwiches': sandwiches})
 
 
+@login_required
+def sandwich_detail(request, sandwich_id):
+    sandwich = Sandwich.objects.get(id=sandwich_id)
+    ingredients_sandwich_doesnt_have = Ingredient.objects.exclude(id__in = sandwich.ingredients.all().values_list('id'))
+    return render(request, 'sandwiches/detail.html', {
+    'sandwich': sandwich, 'ingredients': ingredients_sandwich_doesnt_have,
+  })
+
+
+@login_required
+def assoc_ingredient(request, sandwich_id, ingredient_id):
+  # Note that you can pass a toy's id instead of the whole object
+  Sandwich.objects.get(id=sandwich_id).ingredients.add(ingredient_id)
+  return redirect('detail', sandwich_id=sandwich_id)
+
+
 def signup(request):
   error_message = ''
   if request.method == 'POST':
@@ -39,13 +55,11 @@ def signup(request):
   context = {'form': form, 'error_message': error_message}
   return render(request, 'registration/signup.html', context)
 
-class SandwichDetail(LoginRequiredMixin, DetailView):
-  model = Sandwich
 
 class SandwichUpdate(LoginRequiredMixin, UpdateView):
   model = Sandwich
-  fields = '__all__'
+  fields = ['temp', 'description']
 
 class SandwichDelete(LoginRequiredMixin, DeleteView):
   model = Sandwich
-  success_url = '/sandwich/'
+  success_url = '/'
