@@ -44,8 +44,8 @@
               Sandwiches
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/sandwiches">My Sandwiches</a></li>
-              <li><a class="dropdown-item" href="#">Add a Sandwich</a></li>
+              <li><a class="dropdown-item" href="{% url 'index' %}">My Sandwiches</a></li>
+              <li><a class="dropdown-item" href="{% url 'sandwiches_create' %}">Add a Sandwich</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -59,7 +59,7 @@
               Ingredients
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Ingredients List</a></li>
+              <li><a class="dropdown-item" href="{% url 'ingredients_index' %}">Ingredients List</a></li>
               <li><a class="dropdown-item" href="#">Add an Ingredient</a></li>
             </ul>
           </li>
