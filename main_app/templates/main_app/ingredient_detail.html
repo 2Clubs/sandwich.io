@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>Ingredient Details</h1>
+
+<div class="card text-center">
+    <a href="{% url 'ingredients_detail' ingredient.id %}">
+        <div class="card-body">
+            <span class="card-title">{{ ingredient.name }}</span>
+            <div class="card-text">
+            <a href="#" class="btn btn-primary">Edit</a>
+            <a href="#" class="btn btn-danger">Delete</a>
+        </div>
+        </div>
+    </a>
+
+</div>
+
+{% endblock content %}
