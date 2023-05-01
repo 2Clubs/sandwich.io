@@ -24,28 +24,17 @@ nav a{
 
 .home-page {
     display: flex;
+    font-size: x-large;
 }
 
 .left-half {
-    width: 45%;
-    left: 0;
-}
-
-.right-half {
     position: absolute;
-    width: 45%;
-    right: 100px;
-    background-color: gainsboro;
+    width: 50%;
+    left: 5vw;
 }
 
-.welcome-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
-}
-
-.welcome-links {
-    flex-direction: row;
+.card-container {
+    position: absolute;
+    right: 10vw;
+    height: 600px;
 }
