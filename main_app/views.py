@@ -4,14 +4,20 @@ from django.views.generic import DetailView, ListView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
 from .models import Sandwich, Ingredient
 
 
 # Create your views here.
 def home(request):
-    
     return render(request,'home.html')
-    
+
+ 
+@login_required
+def sandwich_index(request):
+  sandwiches = Sandwich.objects.filter(user=request.user)
+  return render(request, 'sandwiches/index.html', {'sandwiches': sandwiches})
+
 
 def signup(request):
   error_message = ''
@@ -31,3 +37,5 @@ def signup(request):
   form = UserCreationForm()
   context = {'form': form, 'error_message': error_message}
   return render(request, 'registration/signup.html', context)
+
+

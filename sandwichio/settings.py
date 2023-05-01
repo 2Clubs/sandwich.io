@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -81,7 +82,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': '2Clubs/sandwich-io',
-        'USER': 'zanetowell',
+        'USER': 'Mrod2871',
         'PASSWORD': str(os.getenv('PASSWORD')),
         'HOST': 'db.bit.io',
         'PORT': '5432',
