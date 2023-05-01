@@ -1,3 +1,18 @@
 {% extends 'base.html' %} {% block content %}
-<h1> hello </h1>
+<div class = 'home-page'>
+<div class = 'left-half'>
+
+</div>
+<div class = 'right-half'>
+    <div class = 'welcome-container'>
+        <h1>Welcome</h1>
+        <article>
+            Sandwich.IO is the new ultimate sandwich creating app. Add any ingredients you can possibly think of. Make the worlds most perfect or atrocious sandwich but beware... With great power comes great responsibility.
+        </article>
+        <div class= 'welcome-links'>
+            <a href="{% url 'signup' %}">Sign Up</a>
+            <a href="{% url 'login' %}">Log In</a>
+        </div>
+</div>
+<div>
 {% endblock %}
