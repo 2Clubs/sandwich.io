@@ -35,6 +35,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'main_app',
+    'bootstrap5',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -82,7 +83,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': '2Clubs/sandwich-io',
-        'USER': 'Mrod2871',
+        'USER': str(os.getenv('USERNAME')),
         'PASSWORD': str(os.getenv('PASSWORD')),
         'HOST': 'db.bit.io',
         'PORT': '5432',
