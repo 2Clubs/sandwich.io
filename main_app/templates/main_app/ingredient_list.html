@@ -7,7 +7,7 @@
     <div class="row row-cols-4">
         {% for ingredient in object_list %}
         <div class="col">
-            <a href="#">
+            <a href="{% url 'ingredients_detail' ingredient.id %}">
                 <div class='card'>
                     <span class="card-title">{{ ingredient.name }}</span>
                 </div>
