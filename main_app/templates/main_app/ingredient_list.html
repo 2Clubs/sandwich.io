@@ -5,7 +5,9 @@
 {% for ingredient in ingredient_list %}
 <div class="card">
     <a href="{% url 'ingredients_detail' ingredient.id %}">
-        
+        <div class="card-body">
+            <h5 class="card-title">{{ ingriedient.name }}</h5>
+        </div>
     </a>
 </div>
 {% endfor %}
