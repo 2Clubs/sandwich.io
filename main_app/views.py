@@ -13,10 +13,10 @@ def home(request):
     return render(request,'home.html')
 
  
-# @login_required
-# def sandwich_index(request):
-#   sandwiches = Sandwich.objects.filter(user=request.user)
-#   return render(request, 'sandwiches/index.html', {'sandwiches': sandwiches})
+@login_required
+def sandwich_index(request):
+  sandwiches = Sandwich.objects.filter(user=request.user)
+  return render(request, 'sandwiches/index.html', {'sandwiches': sandwiches})
 
 
 def signup(request):
@@ -43,3 +43,7 @@ class IngredientsIndex(ListView):
 
 class IngredientsDetail(DetailView):
   model = Ingredient
+  
+class IngredientCreate(CreateView):
+  model = Ingredient
+  fields = '__all__'
