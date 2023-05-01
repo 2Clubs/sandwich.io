@@ -1,0 +1,40 @@
+body {
+    background-color: white
+}
+
+nav {
+    background-color: blanchedalmond;
+    /* height: 10vh; */
+    margin-bottom: 10vh;
+}
+
+nav a{
+    color: black;
+    font-size: larger;
+}
+
+.navbar-brand {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+}
+
+.home-page {
+    display: flex;
+    font-size: x-large;
+}
+
+.left-half {
+    position: absolute;
+    width: 50%;
+    left: 5vw;
+}
+
+.card-container {
+    position: absolute;
+    right: 10vw;
+    height: 600px;
+}

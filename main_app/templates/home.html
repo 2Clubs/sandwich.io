@@ -1,3 +1,41 @@
 {% extends 'base.html' %} {% block content %}
-<h1> hello </h1>
+<div class = 'home-page'>
+<div class = 'left-half'>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://cdn.discordapp.com/attachments/1070216691415531520/1102698257362202645/nik-owens-8cqoKu5ycuU-unsplash.jpg" class="d-block w-100" alt="sandwich on ciabatta" height = '600px' width = '400px'>
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.discordapp.com/attachments/1070216691415531520/1102695120312205443/jonathan-pielmayer-XZUqPMLHvzw-unsplash.jpg" class="d-block w-100" alt="..." height = '600px' width = '400px'>
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.discordapp.com/attachments/1070216691415531520/1102697829442539550/onder-ortel-2cggmyVJ4v0-unsplash.jpg" class="d-block w-100" alt="..." height = '600px' width = '400px'>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+    <div class="card-container">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h1 class="card-title">Welcome</h1>
+          <p class="card-text">Sandwich.IO is the new ultimate sandwich creating app. Add any ingredients you can possibly think of. Make the worlds most perfect or atrocious sandwich but beware... With great power comes great responsibility.</p>
+          <a href=“{% url 'signup' %}“>Sign Up</a>
+          <a href=“{% url 'login' %}“>Log In</a>
+        </div>
+      </div>
+    </div>
 {% endblock %}
