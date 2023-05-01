@@ -7,7 +7,7 @@
         <div class="card-body">
             <span class="card-title">{{ ingredient.name }}</span>
             <div class="card-text">
-            <a href="#" class="btn btn-primary">Edit</a>
+            <a href="{% url 'ingredients_update' ingredient.id %}" class="btn btn-primary">Edit</a>
             <a href="#" class="btn btn-danger">Delete</a>
         </div>
         </div>

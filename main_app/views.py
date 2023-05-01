@@ -47,3 +47,7 @@ class IngredientsDetail(DetailView):
 class IngredientCreate(CreateView):
   model = Ingredient
   fields = '__all__'
+  
+class IngredientUpdate(UpdateView):
+  model = Ingredient
+  fields = '__all__'
