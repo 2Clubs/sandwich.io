@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+
+<form action="" method="post" autocomplete="off">
+    {% csrf_token %}
+    {% if object %}
+        <h1>Edit <span>{{ object.name }}</span></h1>
+    {% else %}
+        <h1>Add Ingredient</h1>
+    {% endif %}
+        {{ form.as_p }}
+    <input type="submit" value="Submit" class="btn btn-primary">
+</form>
+
+{% endblock content %}
