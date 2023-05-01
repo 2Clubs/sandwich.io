@@ -1,0 +1,51 @@
+body {
+    background-color: white
+}
+
+nav {
+    background-color: blanchedalmond;
+    /* height: 10vh; */
+    margin-bottom: 10vh;
+}
+
+nav a{
+    color: black;
+    font-size: larger;
+}
+
+.navbar-brand {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+}
+
+.home-page {
+    display: flex;
+}
+
+.left-half {
+    width: 45%;
+    left: 0;
+}
+
+.right-half {
+    position: absolute;
+    width: 45%;
+    right: 100px;
+    background-color: gainsboro;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.welcome-links {
+    flex-direction: row;
+}
