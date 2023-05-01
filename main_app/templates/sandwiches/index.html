@@ -8,7 +8,7 @@
     <div class="row row-cols-4">
         {% for sandwich in sandwiches %}
         <div class="col">
-            <a href="{% url 'detail' sandwich.id %}">
+            <a href="{% url 'sandwich_detail' sandwich.id %}">
                 <div class='square-content'>
                     <span class="square-title">{{ sandwich.name }}</span>
                 </div>
