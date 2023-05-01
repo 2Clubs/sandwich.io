@@ -41,3 +41,11 @@ def signup(request):
 
 class SandwichDetail(LoginRequiredMixin, DetailView):
   model = Sandwich
+
+class SandwichUpdate(LoginRequiredMixin, UpdateView):
+  model = Sandwich
+  fields = '__all__'
+
+class SandwichDelete(LoginRequiredMixin, DeleteView):
+  model = Sandwich
+  success_url = '/sandwich/'
