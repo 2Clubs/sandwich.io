@@ -5,6 +5,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Sandwich, Ingredient
 
 
@@ -13,10 +14,26 @@ def home(request):
     return render(request,'home.html')
 
  
-# @login_required
-# def sandwich_index(request):
-#   sandwiches = Sandwich.objects.filter(user=request.user)
-#   return render(request, 'sandwiches/index.html', {'sandwiches': sandwiches})
+@login_required
+def sandwich_index(request):
+  sandwiches = Sandwich.objects.filter(user=request.user)
+  return render(request, 'sandwiches/index.html', {'sandwiches': sandwiches})
+
+
+@login_required
+def sandwich_detail(request, sandwich_id):
+    sandwich = Sandwich.objects.get(id=sandwich_id)
+    ingredients_sandwich_doesnt_have = Ingredient.objects.exclude(id__in = sandwich.ingredients.all().values_list('id'))
+    return render(request, 'sandwiches/detail.html', {
+    'sandwich': sandwich, 'ingredients': ingredients_sandwich_doesnt_have,
+  })
+
+
+@login_required
+def assoc_ingredient(request, sandwich_id, ingredient_id):
+  # Note that you can pass a toy's id instead of the whole object
+  Sandwich.objects.get(id=sandwich_id).ingredients.add(ingredient_id)
+  return redirect('detail', sandwich_id=sandwich_id)
 
 
 def signup(request):
@@ -40,6 +57,17 @@ def signup(request):
 
 class IngredientsIndex(ListView):
   model = Ingredient
-
+  
 class IngredientsDetail(DetailView):
   model = Ingredient
+  
+class SandwichUpdate(LoginRequiredMixin, UpdateView):
+  model = Sandwich
+  fields = ['temp', 'description']
+
+class SandwichDelete(LoginRequiredMixin, DeleteView):
+  model = Sandwich
+  success_url = '/'
+
+
+
