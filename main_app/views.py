@@ -55,21 +55,29 @@ def signup(request):
   context = {'form': form, 'error_message': error_message}
   return render(request, 'registration/signup.html', context)
 
-class IngredientsIndex(ListView):
+
+class SandwichCreate(LoginRequiredMixin, CreateView):
+  model = Sandwich
+  fields = ('name', 'temp', 'description')
+  def form_valid(self, form):
+    form.instance.user = self.request.user 
+    return super().form_valid(form)
+  
+class IngredientsIndex(LoginRequiredMixin, ListView):
   model = Ingredient
   
-class IngredientsDetail(DetailView):
+class IngredientsDetail(LoginRequiredMixin, DetailView):
   model = Ingredient
   
-class IngredientCreate(CreateView):
+class IngredientCreate(LoginRequiredMixin, CreateView):
   model = Ingredient
   fields = '__all__'
   
-class IngredientUpdate(UpdateView):
+class IngredientUpdate(LoginRequiredMixin, UpdateView):
   model = Ingredient
   fields = '__all__'
   
-class IngredientDelete(DeleteView):
+class IngredientDelete(LoginRequiredMixin, DeleteView):
   model = Ingredient
   success_url = '/ingredients/'
 
