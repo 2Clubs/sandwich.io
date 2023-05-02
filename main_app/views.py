@@ -61,6 +61,18 @@ class IngredientsIndex(ListView):
 class IngredientsDetail(DetailView):
   model = Ingredient
   
+class IngredientCreate(CreateView):
+  model = Ingredient
+  fields = '__all__'
+  
+class IngredientUpdate(UpdateView):
+  model = Ingredient
+  fields = '__all__'
+  
+class IngredientDelete(DeleteView):
+  model = Ingredient
+  success_url = '/ingredients/'
+
 class SandwichUpdate(LoginRequiredMixin, UpdateView):
   model = Sandwich
   fields = ['temp', 'description']
@@ -68,6 +80,5 @@ class SandwichUpdate(LoginRequiredMixin, UpdateView):
 class SandwichDelete(LoginRequiredMixin, DeleteView):
   model = Sandwich
   success_url = '/'
-
 
 

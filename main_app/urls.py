@@ -11,5 +11,8 @@ urlpatterns = [
     path('sandwiches/<int:sandwich_id>/assoc_ingredient/<int:ingredient_id>/', views.assoc_ingredient, name='assoc_ingredient'),
     path('ingredients/', views.IngredientsIndex.as_view(), name='ingredients_index'),
     path('ingredients/<int:pk>', views.IngredientsDetail.as_view(), name='ingredients_detail'),
-
+    path('ingredients/create/', views.IngredientCreate.as_view(), name='ingredients_create'),
+    path('ingredients/<int:pk>/update', views.IngredientUpdate.as_view(), name='ingredients_update'),
+    path('ingredients/<int:pk>/delete', views.IngredientDelete.as_view(), name='ingredients_delete'),
+    path('sandwiches/', views.sandwich_index, name='index'),
 ]
