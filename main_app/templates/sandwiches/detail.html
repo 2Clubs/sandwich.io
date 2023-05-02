@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block content %}
-<h1>{{ sandwich.name }}</h1>
+<h1 class='sandwich-name'>{{ sandwich.name }}</h1>
 <hr />
 
 <div class='contents'>
@@ -10,6 +10,7 @@
     <span class='description'>
         Description: {{sandwich.description}}
     </span>
+    <br />
     <a href="{% url 'sandwich_update' sandwich.id %}" class="btn btn-primary"> Edit Sandwich </a>
     <a href="{% url 'sandwich_delete' sandwich.id %}" class="btn btn-danger"> Eat Sandwich </a>
 </div>
