@@ -38,3 +38,18 @@ nav a{
     right: 10vw;
     height: 600px;
 }
+
+.sandwich-name {
+    padding-left: 25px;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height:50vh;
+    row-gap: 2em;
+    justify-content: center;
+    padding-left: 25px;
+}
+
