@@ -4,8 +4,9 @@ body {
 
 nav {
     background-color: blanchedalmond;
-    /* height: 10vh; */
+    border-bottom: 3px solid #Bfa88c;
     margin-bottom: 10vh;
+    padding-left: 20px;
 }
 
 nav a{
@@ -16,6 +17,10 @@ nav a{
 .navbar-brand {
     font-size: x-large;
     font-weight: 700;
+}
+
+.navbar-brand:hover {
+    color: black;
 }
 
 .navbar-nav .nav-link {
@@ -33,14 +38,38 @@ nav a{
     left: 5vw;
 }
 
-.card-container {
+.sandwich-name {
+    padding-left: 25px;
+}
+
+#carouselExampleIndicators {
+    border: 2px solid black;
+    box-shadow: -10px 12px 14px 0px rgba(0,0,0,0.75);
+}
+
+#welcome-card {
     position: absolute;
     right: 10vw;
     height: 600px;
+    border: 2px solid black;
+    text-align: center;
+    padding-top: 20px;
 }
 
-.sandwich-name {
-    padding-left: 25px;
+.welcome-card-links {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+#welcome-card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#welcome-card a:hover {
+    text-decoration: underline;
 }
 
 .contents {
