@@ -55,6 +55,14 @@ def signup(request):
   context = {'form': form, 'error_message': error_message}
   return render(request, 'registration/signup.html', context)
 
+
+class SandwichCreate(LoginRequiredMixin, CreateView):
+  model = Sandwich
+  fields = ('name', 'temp', 'description')
+  def form_valid(self, form):
+    form.instance.user = self.request.user 
+    return super().form_valid(form)
+
 class IngredientsIndex(LoginRequiredMixin, ListView):
   model = Ingredient
   
