@@ -10,8 +10,8 @@
     <span class='description'>
         Description: {{sandwich.description}}
     </span>
-    <a href="{% url 'sandwich_update' sandwich.id %}"> Edit Sandwich </a>
-    <a href="{% url 'sandwich_delete' sandwich.id %}"> Eat Sandwich </a>
+    <a href="{% url 'sandwich_update' sandwich.id %}" class="btn btn-primary"> Edit Sandwich </a>
+    <a href="{% url 'sandwich_delete' sandwich.id %}" class="btn btn-danger"> Eat Sandwich </a>
 </div>
 <div class="row">
     <div class="col s6">
@@ -20,7 +20,7 @@
       <div class="card">
         <div class="card-content">
           <span class="card-title">
-            A <span style="color: {{ ingredient.color }}">{{ ingredient.color }}</span> {{ ingredient.name }}
+            {{ ingredient.name }}
           </span>
         </div>
       </div>
@@ -35,7 +35,7 @@
           <div class="card">
             <div class="card-content">
               <span class="card-title">
-                A <span style="color: {{ ingredient.color }}">{{ ingredient.color }}</span> {{ ingredient.name }}
+               {{ ingredient.name }}
               </span>
             </div>
             <div class="card-action">
