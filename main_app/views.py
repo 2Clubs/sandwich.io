@@ -87,6 +87,6 @@ class SandwichUpdate(LoginRequiredMixin, UpdateView):
 
 class SandwichDelete(LoginRequiredMixin, DeleteView):
   model = Sandwich
-  success_url = '/'
+  success_url = '/sandwiches/'
 
 
