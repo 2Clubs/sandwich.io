@@ -4,12 +4,15 @@
 <hr>
 
 <div class="container text-center">
-    <div class="row row-cols-4">
+    <div class="row row-cols-4" id='sandwich-grid'>
         {% for ingredient in object_list %}
         <div class="col">
             <a href="{% url 'ingredients_detail' ingredient.id %}">
                 <div class='card'>
-                    <span class="card-title">{{ ingredient.name }}</span>
+                    <div class='square-content'>
+                    {% load static %}<img src='{% static "images/greens.png" %}'>
+                    <span class="square-title">{{ ingredient.name }}</span>
+                    </div>
                 </div>
             </a>
         </div>

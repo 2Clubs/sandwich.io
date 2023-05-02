@@ -82,3 +82,28 @@ nav a{
     padding-left: 25px;
 }
 
+.my-sandwiches {
+    text-align: center;
+}
+
+#sandwich-grid a {
+    text-decoration: none;
+}
+
+#sandwich-grid a:hover {
+    text-decoration: underline;
+}
+
+.square-content {
+    height: 200px;
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 35px;
+    text-align: justify
+}
+
+.square-title {
+    font-size: x-large;
+    color: black;
+}
