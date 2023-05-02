@@ -62,7 +62,7 @@ class SandwichCreate(LoginRequiredMixin, CreateView):
   def form_valid(self, form):
     form.instance.user = self.request.user 
     return super().form_valid(form)
-  
+
 class IngredientsIndex(LoginRequiredMixin, ListView):
   model = Ingredient
   
@@ -87,6 +87,6 @@ class SandwichUpdate(LoginRequiredMixin, UpdateView):
 
 class SandwichDelete(LoginRequiredMixin, DeleteView):
   model = Sandwich
-  success_url = '/'
+  success_url = '/sandwiches/'
 
 
