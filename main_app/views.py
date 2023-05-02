@@ -55,21 +55,21 @@ def signup(request):
   context = {'form': form, 'error_message': error_message}
   return render(request, 'registration/signup.html', context)
 
-class IngredientsIndex(ListView):
+class IngredientsIndex(LoginRequiredMixin, ListView):
   model = Ingredient
   
-class IngredientsDetail(DetailView):
+class IngredientsDetail(LoginRequiredMixin, DetailView):
   model = Ingredient
   
-class IngredientCreate(CreateView):
-  model = Ingredient
-  fields = '__all__'
-  
-class IngredientUpdate(UpdateView):
+class IngredientCreate(LoginRequiredMixin, CreateView):
   model = Ingredient
   fields = '__all__'
   
-class IngredientDelete(DeleteView):
+class IngredientUpdate(LoginRequiredMixin, UpdateView):
+  model = Ingredient
+  fields = '__all__'
+  
+class IngredientDelete(LoginRequiredMixin, DeleteView):
   model = Ingredient
   success_url = '/ingredients/'
 
