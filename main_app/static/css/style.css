@@ -50,7 +50,7 @@ nav a{
 #welcome-card {
     position: absolute;
     right: 10vw;
-    height: 600px;
+    height: 605px;
     border: 2px solid black;
     text-align: center;
     padding-top: 20px;
@@ -106,4 +106,24 @@ nav a{
 .square-title {
     font-size: x-large;
     color: black;
+}
+
+.no-sandwiches {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 200px;
+}
+
+@media screen and (max-width: 912px) {
+    #carouselExampleIndicators{
+        display: none;
+    }
+
+    #welcome-card{
+        display: inline;
+        margin: auto;
+    }
 }
