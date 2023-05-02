@@ -29,12 +29,16 @@
       </div>
 </div>
     <div class="card-container">
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 20rem;" id='welcome-card'>
         <div class="card-body">
           <h1 class="card-title">Welcome</h1>
+          <hr />
           <p class="card-text">Sandwich.IO is the new ultimate sandwich creating app. Add any ingredients you can possibly think of. Make the worlds most perfect or atrocious sandwich but beware... With great power comes great responsibility.</p>
-          <a href='{% url "signup" %}'>Sign Up</a>
-          <a href='{% url "login" %}'>Log In</a>
+          <hr />
+          <div class = 'welcome-card-links'>
+            <a href='{% url "signup" %}'>Sign Up</a>
+            <a href='{% url "login" %}'>Log In</a>
+          </div>
         </div>
       </div>
     </div>
