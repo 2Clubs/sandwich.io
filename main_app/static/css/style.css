@@ -69,6 +69,44 @@ nav a{
     text-decoration: underline;
 }
 
+#register-form {
+    display: flex;
+    justify-content: center;
+    width: 55vw;
+    flex-direction: column;
+    column-gap: 5px;
+    margin: auto;
+}
+
+#register-submit {
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+}
+
+#login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 5px;
+    margin: auto;
+    margin-top: 20vh;
+}
+
+.form-h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#sandwich-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 5px;
+}
+
 .my-sandwiches {
     text-align: center;
 }
@@ -159,6 +197,14 @@ nav a{
     background-color: whitesmoke;
     font-size: large;
     margin-bottom: 5px;
+}
+
+#ingredient-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 5px;
 }
 
 #ingredient-detail {
