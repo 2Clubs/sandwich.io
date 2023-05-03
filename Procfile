@@ -1,1 +1,1 @@
-web: gunicorn sandwich-io.wsgi
+web: gunicorn sandwichio.wsgi
