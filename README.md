@@ -33,7 +33,7 @@ Sandwich.io helps you:
 
 ## **Getting Started**
 
-Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Source Code Pro">**docket.**</span></a>
+Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Source Code Pro">**Sandwich.io**</span></a>
 
 ---
 ## **About the project**
