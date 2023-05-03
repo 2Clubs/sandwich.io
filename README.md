@@ -1,14 +1,13 @@
 <p align="center">
 </p>
 
-![dotenv][dotenv-img]
-![ejs][ejs-img]
+![dotenv][dotenv-img] ![python][python-img]
 
 
 # <span style="font-family: andale mono, monospace">**Sandwich.io** <span>
 
 ## **Description**    
-### Stay organized and manage your day-to-day.  <br>
+### Stay organized and manage your Sandwiches.  <br>
 Sandwich.io helps you: 
 - Increase hunger
 - Plan out your sandwiches
@@ -66,8 +65,8 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 
 ## **Future Enhancements**
 
-- 
-- 
+- Ability to see nutritional facts
+- Ability to add an image
 
 <div align="right">
     <a href="#top">🔝</a>
@@ -76,7 +75,9 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 ---
 
 ## Stay in touch
-[![LinkedIn][linkedin-img]][linkedin-url]<br>
+[![LinkedIn][linkedin-img]][linkedin-urlm] Mario Rodriguez<br>
+[![LinkedIn][linkedin-img]][linkedin-urlz] Zane Towell<br>
+[![LinkedIn][linkedin-img]][linkedin-urld] Dan Bennett<br>
 [![GitHub][github-img]][github-url]<br>
 
 
@@ -90,7 +91,7 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 <!-- markdown links and images-->
 [html-img]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
 [css-img]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
-[js-img]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
+[python-img]: https://img.shields.io/github/pipenv/locked/python-version/zanetowell/sandwich.io
 [github-img]: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
 [linkedin-img]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 [heroku-img]: https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white
@@ -102,9 +103,9 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 
 [html-url]: https://developer.mozilla.org/en-US/docs/Glossary/HTML5
 [css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
-[linkedin-url]: https://www.linkedin.com/in/mario2603/
-[linkedin-url]: https://www.linkedin.com/in/zane-towell/
-[linkedin-url]: https://www.linkedin.com/in/dan-bennett5693/
+[linkedin-urlm]: https://www.linkedin.com/in/mario2603/
+[linkedin-urlz]: https://www.linkedin.com/in/zane-towell/
+[linkedin-urld]: https://www.linkedin.com/in/dan-bennett5693/
 [github-url]: https://github.com/zanetowell/sandwich.io
 [bit.io-url]: https://www.bit.io/
 [heroku-url]: https:///
