@@ -2,14 +2,14 @@
 {% if object %}
 <h1>Edit <span class="teal-text">{{object.name}}</span></h1>
 {% else %}
-<h1>Craft your Sandwich</h1>
+<h1 class='form-h1'>Craft your Sandwich</h1>
 {% endif %}
 
-<form action="" method="post">
+<form action="" method="post" id='sandwich-form'>
   {% csrf_token %}
   <table>
     {{ form.as_table }}
   </table>
-  <input type="submit" value="Submit!" class="btn" />
+  <input type="submit" value="Submit!" class="btn btn-success" />
 </form>
 {% endblock %}

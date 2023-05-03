@@ -1,18 +1,17 @@
 {% extends 'base.html' %} {% block content %}
 
 <h1 class='text-center'>Ingredient Details</h1>
-
-<div class="card text-center">
+<hr />
+<div class="card text-center" id='ingredient-detail'>
     <a href="{% url 'ingredients_detail' ingredient.id %}">
         <div class="card-body">
-            <span class="card-title">{{ ingredient.name }}</span>
+            <span class="card-title" id='ingredient-detail-name'>{{ ingredient.name }}</span>
             <div class="card-text">
             <a href="{% url 'ingredients_update' ingredient.id %}" class="btn btn-primary">Edit</a>
             <a href="{% url 'ingredients_delete' ingredient.id %}" class="btn btn-danger">Delete</a>
         </div>
         </div>
     </a>
-
 </div>
 
 {% endblock content %}

@@ -1,8 +1,9 @@
 {% extends 'base.html' %} {% block content %}
 <h1 class='sandwich-name'>{{ sandwich.name }}</h1>
 <hr />
-
+<div class='sandwich-page'>
 <div class='contents'>
+  {% load static %}<img src='{% static "images/sandwich.png" %}' height = '100px' width = '100px'>
     <span class='temp'>
         Temp: {{sandwich.temp}}
     </span>
@@ -14,11 +15,12 @@
     <a href="{% url 'sandwich_update' sandwich.id %}" class="btn btn-primary"> Edit Sandwich </a>
     <a href="{% url 'sandwich_delete' sandwich.id %}" class="btn btn-danger"> Eat Sandwich </a>
 </div>
-<div class="row">
-    <div class="col s6">
-      <h3>{{ sandwich.name }}'s Ingredients</h3>
+{% comment %} <div class="row"> {% endcomment %}
+    <div class="col s6" id='sandwich-ingredients'>
+      <h3 id='detail-ingredients'>{{ sandwich.name }}'s Ingredients</h3>
+      <hr />
       {% if sandwich.ingredients.count %} {% for ingredient in sandwich.ingredients.all %}
-      <div class="card">
+      <div class="card" id='current-ingredient-card'>
         <div class="card-content">
           <span class="card-title">
             {{ ingredient.name }}
@@ -29,11 +31,12 @@
       <h5>No Ingredients</h5>
       {% endif %}
     </div>
-    <div class="col s6">
-      <h3>Available Ingredients</h3>
+    <div class="col s6" id='available-ingredients'>
+      <h3 id='detail-available'>Available Ingredients</h3>
+      <hr />
       {% if ingredients.count %}
         {% for ingredient in ingredients.all %}
-          <div class="card">
+          <div class="card" id='available-ingredient-card'>
             <div class="card-content">
               <span class="card-title">
                {{ ingredient.name }}
@@ -52,4 +55,5 @@
       {% endif %}
     </div>
   </div>
+</div>
   {% endblock %}
