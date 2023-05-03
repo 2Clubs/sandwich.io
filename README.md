@@ -1,11 +1,11 @@
 <p align="center">
-<img src=https://ga-students.slack.com/files/U04QXS6VCJG/F055VLYU2JE/image.png />
+<img src="https://user-images.githubusercontent.com/126505925/235982120-54ea5e55-f40e-49bf-a759-61ddeffaa855.png" />
 </p>
 
 # <span style="font-family: andale mono, monospace">**Sandwich.io** <span>
 
 ## **Description**    
-### Stay organized and manage your Sandwiches.  <br>
+### Sandwich.io is the new ultimate sandwich creating app. Add any ingredients you can possibly think of. Make the worlds most perfect or atrocious sandwich but beware... With great power comes great responsibility.  <br>
 Sandwich.io helps you: 
 - Increase hunger
 - Plan out your sandwiches
