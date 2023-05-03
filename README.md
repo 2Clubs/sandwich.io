@@ -42,7 +42,6 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 
 [![HTML5][html-img]][html-url]
 [![CSS][css-img]][css-url]
-[![Express.js][expressjs-img]][expressjs-url]
 ### **Other resources** 
 [![HEROKU][heroku-img]][heroku-url] [![Trello][trello-img]][trello-url]
 
