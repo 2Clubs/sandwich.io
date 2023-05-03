@@ -14,9 +14,6 @@ Sandwich.io helps you:
 
 ---
 
-<!-- TABLE OF CONTENTS -->
-
-
 <details>
 <summary>Table of contents</summary>
 <li><a href="#about-the-project">About the Project</a></li>
@@ -35,7 +32,6 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 ---
 ## **About the project**
 ### **Built with**
-
 
 [![HTML5][html-img]][html-url]
 [![CSS][css-img]][css-url]
@@ -56,12 +52,9 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 ## **Screenshots**
 
 
-
-
 <div align="right">
     <a href="#top">🔝</a>
 </div>
-
 
 ---
 
@@ -82,15 +75,12 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 [![LinkedIn][linkedin-img]][linkedin-urld] Dan Bennett<br>
 [![GitHub][github-img]][github-url]<br>
 
-
-
 <div align="right">
     <a href="#top">🔝</a>
 </div>
 
 
-
-<!-- markdown links and images-->
+<!--links and images-->
 [html-img]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
 [css-img]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
 [python-img]: https://img.shields.io/pypi/pyversions/he
@@ -105,7 +95,7 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 [dotenv-img]: https://img.shields.io/badge/dotenv-%5Ev16.0.3-orange
 [ejs-img]: https://img.shields.io/badge/express-%5Ev4.18.2-yellow
 
-<!-- URLs -->
+<!--URLs-->
 
 [html-url]: https://developer.mozilla.org/en-US/docs/Glossary/HTML5
 [css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
