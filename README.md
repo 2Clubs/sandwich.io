@@ -1,5 +1,5 @@
 <p align="center">
-<img src=https://ga-students.slack.com/files/U04QXS6VCJG/F055VLYU2JE/image.png />
+<img src="https://ga-students.slack.com/files/U04QXS6VCJG/F055VLYU2JE/image.png" />
 </p>
 
 # <span style="font-family: andale mono, monospace">**Sandwich.io** <span>
