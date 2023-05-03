@@ -39,8 +39,8 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 
 [![HTML5][html-img]][html-url]
 [![CSS][css-img]][css-url]
-[![Bootstrap][bootstrap-img]][empty-url]
-[![Python][python-img]][empty-url]
+[![Bootstrap][bootstrap]][empty-url]
+[![Python][python-img2]][empty-url]
 [![DJango][django-img]][empty-url]
 ### **Other resources** 
 [![HEROKU][heroku-img]][heroku-url] [![Trello][trello-img]][trello-url]
@@ -94,7 +94,7 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 [css-img]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
 [python-img]: https://img.shields.io/pypi/pyversions/he
 [bootstrap]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[python-img]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
+[python-img2]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 [github-img]: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
 [django-img]: https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white
 [linkedin-img]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
