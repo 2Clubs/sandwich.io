@@ -42,6 +42,7 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 [![Bootstrap][bootstrap]][empty-url]
 [![Python][python-img2]][empty-url]
 [![DJango][django-img]][empty-url]
+[![Dotenv][dotenv-img]][empty-url]
 ### **Other resources** 
 [![HEROKU][heroku-img]][heroku-url] [![Trello][trello-img]][trello-url]
 [![github-img]][empty-url]
