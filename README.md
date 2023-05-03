@@ -39,9 +39,9 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 
 [![HTML5][html-img]][html-url]
 [![CSS][css-img]][css-url]
-[bootstrap-img]
-[python-img]
-[django-img]
+[![Bootstrap][bootstrap-img]][]
+[![Python][python-img]][]
+[![DJango][django-img]][]
 ### **Other resources** 
 [![HEROKU][heroku-img]][heroku-url] [![Trello][trello-img]][trello-url]
 [github-img]
