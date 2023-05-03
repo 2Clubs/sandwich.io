@@ -5,7 +5,7 @@
 # <span style="font-family: andale mono, monospace">**Sandwich.io** <span>
 
 ## **Description**    
-### Sandwich.IO is the new ultimate sandwich creating app. Add any ingredients you can possibly think of. Make the worlds most perfect or atrocious sandwich but beware... With great power comes great responsibility.  <br>
+### Sandwich.io is the new ultimate sandwich creating app. Add any ingredients you can possibly think of. Make the worlds most perfect or atrocious sandwich but beware... With great power comes great responsibility.  <br>
 Sandwich.io helps you: 
 - Increase hunger
 - Plan out your sandwiches
