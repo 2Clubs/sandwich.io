@@ -39,12 +39,12 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 
 [![HTML5][html-img]][html-url]
 [![CSS][css-img]][css-url]
-[![Bootstrap][bootstrap-img]][]
-[![Python][python-img]][]
-[![DJango][django-img]][]
+[![Bootstrap][bootstrap-img]][empty-url]
+[![Python][python-img]][empty-url]
+[![DJango][django-img]][empty-url]
 ### **Other resources** 
 [![HEROKU][heroku-img]][heroku-url] [![Trello][trello-img]][trello-url]
-[github-img]
+[![github-img]][empty-url]
 
 <div align="right">
     <a href="#top">🔝</a>
@@ -114,5 +114,6 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 [bit.io-url]: https://www.bit.io/
 [heroku-url]: https:///
 [trello-url]: https://trello.com/b/p77GhzAK/trello-board
+[empty-url]: https
 
 
