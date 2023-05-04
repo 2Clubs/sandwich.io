@@ -36,7 +36,12 @@ class Sandwich(models.Model):
         return reverse("detail", kwargs={"sandwich_id": self.id})
     
 
-
+class Photo(models.Model):
+    url = models.CharField(max_length=200)
+    sandwich = models.ForeignKey(Sandwich, on_delete=models.CASCADE)
+    
+    def __str__(self):
+        return f"Photo for: {self.sandwich.name} @{self.url}"
 
 
 
