@@ -99,16 +99,19 @@ Deployed with: Heroku - [Sandwich.io](https://sandwich-io.herokuapp.com)
 [ejs-img]: https://img.shields.io/badge/express-%5Ev4.18.2-yellow
 
 <!--URLs-->
-
-[html-url]: https://developer.mozilla.org/en-US/docs/Glossary/HTML5
-[css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
 [linkedin-urlm]: https://www.linkedin.com/in/mario2603/
 [linkedin-urlz]: https://www.linkedin.com/in/zane-towell/
 [linkedin-urld]: https://www.linkedin.com/in/dan-bennett5693/
+[html-url]: https://developer.mozilla.org/en-US/docs/Glossary/HTML5
+[css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
 [github-url]: https://github.com/zanetowell/sandwich.io
 [bit.io-url]: https://www.bit.io/
 [heroku-url]: https:///
 [trello-url]: https://trello.com/b/p77GhzAK/trello-board
 [empty-url]: https
-
-
+<!-- Credits/Resources -->
+https://unsplash.com/photos/8cqoKu5ycuU
+https://unsplash.com/photos/XZUqPMLHvzw
+https://unsplash.com/photos/2cggmyVJ4v0
+https://icons8.com/icon/HwIEsEmuCUlw/sandwich
+https://icons8.com/icon/N8twDYwFI-QP/leafy-green
