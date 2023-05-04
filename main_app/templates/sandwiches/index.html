@@ -5,12 +5,14 @@
     <div class="row row-cols-4" id='sandwich-grid'>
         {% if sandwiches.count %}
         {% for sandwich in sandwiches %}
-        <div class="col">
+        <div class="col" id='sandwich-list-card'>
             <a href="{% url 'detail' sandwich.id %}">
+                <div class='card'>
                 <div class='square-content'>
                     {% load static %}<img src='{% static "images/sandwich.png" %}'>
                     <span class="square-title">{{ sandwich.name }}</span>
                 </div>
+            </div>
             </a>
         </div>
         {% endfor %}

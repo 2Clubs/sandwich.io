@@ -6,7 +6,7 @@
 <div class="container text-center">
     <div class="row row-cols-4" id='sandwich-grid'>
         {% for ingredient in object_list %}
-        <div class="col">
+        <div class="col" id='ingredient-list-card'>
             <a href="{% url 'ingredients_detail' ingredient.id %}">
                 <div class='card'>
                     <div class='square-content'>
