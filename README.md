@@ -110,8 +110,8 @@ Deployed with: Heroku - [Sandwich.io](https://sandwich-io.herokuapp.com)
 [trello-url]: https://trello.com/b/p77GhzAK/trello-board
 [empty-url]: https
 <!-- Credits/Resources -->
-https://unsplash.com/photos/8cqoKu5ycuU
-https://unsplash.com/photos/XZUqPMLHvzw
-https://unsplash.com/photos/2cggmyVJ4v0
-https://icons8.com/icon/HwIEsEmuCUlw/sandwich
-https://icons8.com/icon/N8twDYwFI-QP/leafy-green
+[photo]: https://unsplash.com/photos/8cqoKu5ycuU
+[photo]: https://unsplash.com/photos/XZUqPMLHvzw
+[photo]: https://unsplash.com/photos/2cggmyVJ4v0
+[photo]: https://icons8.com/icon/HwIEsEmuCUlw/sandwich
+[photo]: https://icons8.com/icon/N8twDYwFI-QP/leafy-green
