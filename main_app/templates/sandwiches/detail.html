@@ -15,7 +15,6 @@
     <a href="{% url 'sandwich_update' sandwich.id %}" class="btn btn-primary"> Edit Sandwich </a>
     <a href="{% url 'sandwich_delete' sandwich.id %}" class="btn btn-danger"> Eat Sandwich </a>
 </div>
-{% comment %} <div class="row"> {% endcomment %}
     <div class="col s6" id='sandwich-ingredients'>
       <h3 id='detail-ingredients'>{{ sandwich.name }}'s Ingredients</h3>
       <hr />
