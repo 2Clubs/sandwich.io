@@ -27,7 +27,7 @@ Sandwich.io helps you:
 
 ## **Getting Started**
 
-Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Source Code Pro">**Sandwich.io**</span></a>
+Deployed with: Heroku - [Sandwich.io](https://sandwich-io.herokuapp.com)
 
 ---
 ## **About the project**
@@ -50,6 +50,9 @@ Deployed with: Heroku - <a href="" target="_blank"><span style="font-family:Sour
 ---
 
 ## **Screenshots**
+<img src='https://media.git.generalassemb.ly/user/47982/files/3572f971-56a2-47e5-b36d-a691ffcaf8fd' />
+<img src='https://media.git.generalassemb.ly/user/47982/files/40a6b35d-7737-4e00-b4c7-f1ef42560943' />
+<img src='https://media.git.generalassemb.ly/user/47982/files/3c833429-f5e6-4d5a-bba6-2a8a675ebb49' />
 
 
 <div align="right">
