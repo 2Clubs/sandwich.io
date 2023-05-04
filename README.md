@@ -27,7 +27,7 @@ Sandwich.io helps you:
 
 ## **Getting Started**
 
-Deployed with: Heroku - [Sandwich.io](https://sandwich-io.herokuapp.com){:target='_blank"}
+Deployed with: Heroku - [Sandwich.io](https://sandwich-io.herokuapp.com)
 
 ---
 ## **About the project**
