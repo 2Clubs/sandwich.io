@@ -119,17 +119,25 @@ nav a{
     text-decoration: underline;
 }
 
+#ingredient-list-card {
+    margin-top: 20px;
+}
+
 .square-content {
     height: 200px;
-    width: 300px;
+    width: fit-content;
     margin: auto;
     margin-top: 30px;
     padding-top: 35px;
-    text-align: justify
+    text-align: justify;
+}
+
+#sandwich-list-card {
+    margin-top: 20px;
 }
 
 .square-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: black;
 }
 
