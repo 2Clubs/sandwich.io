@@ -4,16 +4,26 @@
 <div class='sandwich-page'>
 <div class='contents'>
   {% load static %}<img src='{% static "images/sandwich.png" %}' height = '100px' width = '100px'>
-    <span class='temp'>
-        Temp: {{sandwich.temp}}
-    </span>
+  {% if sandwich.temp == 'Cold' %}
+    <div id='temp'>
+        Temp: <p class="text-primary" id='temp'>
+          {{sandwich.temp}}
+      </p>
+    </div>
+    {% else %}
+    <div id='temp'>
+      Temp: <p class="text-danger" id='temp'>
+        {{sandwich.temp}}
+    </p>
+  </div>
+  {% endif %}
     <br />
     <span class='description'>
         Description: {{sandwich.description}}
     </span>
     <br />
-    <a href="{% url 'sandwich_update' sandwich.id %}" class="btn btn-primary"> Edit Sandwich </a>
-    <a href="{% url 'sandwich_delete' sandwich.id %}" class="btn btn-danger"> Eat Sandwich </a>
+    <a href="{% url 'sandwich_update' sandwich.id %}" class="btn btn-primary" id='edit-eat-btns'> Edit Sandwich </a>
+    <a href="{% url 'sandwich_delete' sandwich.id %}" class="btn btn-danger" id='edit-eat-btns'> Eat Sandwich </a>
 </div>
     <div class="col s6" id='sandwich-ingredients'>
       <h3 id='detail-ingredients'>{{ sandwich.name }}'s Ingredients</h3>
@@ -24,6 +34,10 @@
           <span class="card-title">
             {{ ingredient.name }}
           </span>
+          <form action="{% url 'unassoc_ingredient' sandwich.id ingredient.id %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn">Remove</button>
+          </form>
         </div>
       </div>
       {% endfor %} {% else %}
