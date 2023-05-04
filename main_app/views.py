@@ -31,8 +31,12 @@ def sandwich_detail(request, sandwich_id):
 
 @login_required
 def assoc_ingredient(request, sandwich_id, ingredient_id):
-  # Note that you can pass a toy's id instead of the whole object
   Sandwich.objects.get(id=sandwich_id).ingredients.add(ingredient_id)
+  return redirect('detail', sandwich_id=sandwich_id)
+
+@login_required
+def unassoc_ingredient(request, sandwich_id, ingredient_id):
+  Sandwich.objects.get(id=sandwich_id).ingredients.remove(ingredient_id)
   return redirect('detail', sandwich_id=sandwich_id)
 
 
